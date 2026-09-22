@@ -1,0 +1,51 @@
+<!--
+
+5. Table with merged cells — a weekly class schedule (Mon–Fri as columns, a few time slots as rows) where one subject spans two time slots. New attributes: colspan and rowspan on <td>.
+
+-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class schedule</title>
+    </head>
+
+    <body>
+        <h1>Weekly Schedule</h1>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+
+            <tr>
+                <td>9 AM</td>
+                <td colspan="2">Math</td>
+                <td>Science</td>
+                <td>Art</td>
+                <td>Music</td>
+            </tr>
+
+            <tr>
+                <td>10 AM</td>
+                <td>English</td>
+                <td>History</td>
+                <td rowspan="2">PE</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+
+            <tr>
+                <td>11 AM</td>
+                <td>Art</td>
+                <td>Music</td>
+                <td>English</td>
+                <td>History</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+
+Contact form — a form with fields for name, email, and message, plus a submit button. New tags: <form>, <input> (with type="text" and type="email"), <textarea>, and <button>. Give each input a matching <label> — look up why <label for="..."> and the input's id need to match.
+
+-->
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <form action="update_contact.php " method="POST">
+
+        <label for="username"> User Name</label>
+        <input type="text" id="username" name="username" placeholder="username">
+        <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="1234@.com">
+        <br> <br>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" maxlength="200"></textarea>
+        <br> <br>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
