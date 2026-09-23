@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Attributes</title>
+    </head>
+    <body>
+        <h1>User profile</h1>
+        <form action="update_profile.php" method="POST"></form>
+
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your name">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <br><br>
+
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" id="birthdate" name="birthdate" max="2005-12-31" required>
+
+        <button type="submit">Submit</button>
+
+    </body>
+</html>
