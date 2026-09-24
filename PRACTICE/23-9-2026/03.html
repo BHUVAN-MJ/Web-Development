@@ -1,27 +1,24 @@
 <!--
 
-3. Heading hierarchy — a page about any topic using <h1> through <h4>, each followed by a paragraph. Use exactly one <h1>. Look up why that rule exists.
+3. Audio/video embed — a page with either an <audio> or <video> element using the controls attribute, plus a <source> tag inside it instead of a plain src on the tag itself. Look up why <source> exists when you could just write src="file.mp4" directly.
 
 -->
 
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Headings</title>
+        <title>Video </title>
     </head>
+
     <body>
-        <h1>Lorem, ipsum.</h1>
-        <p>Lorem, ipsum.</p>
+        <h1>Sample video</h1>
 
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>Lorem, ipsum dolor.</p>
+        <video controls width="400">
+            <source src="C:\Users\Bhuvan M J\OneDrive\Importent\OneDrive\Desktop\Web Development\HTML\images" type="video/mp4">
 
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit.</p>
+            <source src="C:\Users\Bhuvan M J\OneDrive\Importent\OneDrive\Desktop\Web Development\HTML\images" type="video/webm">
 
-        <h4>Lorem ipsum dolor sit amet.</h4>
-        <p>Lorem ipsum dolor sit amet.</p>
-        
+            your broweser does not support the video tag
+        </video>
     </body>
 </html>
