@@ -1,6 +1,54 @@
 <!---
 
-2. Details and summary — a small FAQ page with 3 questions, each using <details> and <summary> so the answer is hidden until clicked. No JavaScript needed — this is a native HTML "accordion."
+2. Table + form combo — a page with a table of 3 products (name, price, stock) and, below it, a simple order form (name, quantity as a number input, submit button). This mixes two structural patterns you've now learned separately.
 
 --->
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Page</title>
+    </head>
+
+    <body>
+        <h1>Products</h1>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+
+            <tr>
+                <td>Note Book</td>
+                <td>$3</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Pen</td>
+                <td>$1</td>
+                <td>200</td>
+            </tr>
+
+            <tr>
+                <td>Back Pack</td>
+                <td>$25</td>
+                <td>15</td>
+            </tr>
+        </table>
+
+        <h2>Place an order</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <label for="qty">Quantity</label>
+            <input type="number" id="qty" name="qty" min="1">
+            <br><br>
+
+            <button type="submit">Order</button>
+        </form>
+    </body>
+</html>
