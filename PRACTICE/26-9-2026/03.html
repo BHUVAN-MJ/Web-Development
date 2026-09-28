@@ -1,41 +1,40 @@
 <!--
 
-3. Nested semantic layout — a full page: <header> with <nav>, <main> containing two <article> elements (each with its own heading and paragraph), an <aside>, and a <footer> with a <small> copyright line. Bigger version of Day 3's exercise 5.
+3. Multi-select and dropdown — a form with a <select> dropdown (at least 4 options) and a checkbox group for "select all that apply" style multiple choices, using <optgroup> to group the dropdown options into two categories.
 
 -->
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Input Type</title>
-    </head>
+<head>
+    <title>Preferences</title>
+</head>
+<body>
+    <h1>Preferences</h1>
+    <form>
+        <label for="food">Favorite food:</label>
+        <select id="food" name="food">
+            <optgroup label="Fruits">
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+            </optgroup>
+            <optgroup label="Vegetables">
+                <option value="carrot">Carrot</option>
+                <option value="potato">Potato</option>
+            </optgroup>
+        </select>
+        <br><br>
 
-    <body>
-        <h1>Survey</h1>
-        <form>
-            <label for="dod">Date of Birth</label>
-            <input type="date" id="dod" name="dod">
-            <br><br>
+        <p>Hobbies (select all that apply):</p>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <br><br>
 
-            <label for="age">Age</label>
-            <input type="number" id="age" name="age">
-            <br><br>
-
-            <label for="newsletter">Subscribe to news letter</label>
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <br><br>
-
-            <p>Favorite Season:</p>
-            <input type="radio" id="summer" name="season" value="summer">
-            <label for="summer">Summer</label>
-            
-            <input type="radio" id="winter" name="season" value="winter">
-            <label for="winter">winter</label>
-            <br><br>
-
-            <label for="volume">volume</label>
-            <input type="range" id="volume" name="volume" min="0" max="100">
-            <br><br>
-        </form>
-    </body>
+        <button type="submit">Save</button>
+    </form>
+</body>
 </html>

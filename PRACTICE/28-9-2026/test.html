@@ -1,0 +1,204 @@
+<!--
+
+Task 1: Structure. A page for a fictional cafe. Start with the full skeleton, including lang, charset, and a <title>. Use <header> with <nav> (three links to #menu, #hours, and #contact), then <main> with three <section>s that have those ids, and a <footer>.
+
+Task 2: Menu table. Inside the menu section, add a table of four items with columns for Item, Price, and Vegetarian (yes/no). It must have a header row.
+
+Task 3: Contact form. Inside the contact section, build a form with a required name, a required email, a <select> for "reason for contacting" (three options), a message box, and a submit button. Every field needs a properly connected label.
+
+Task 4: Media and lists. Inside the hours section, add a figure with an image and caption, plus a nested list: days of the week grouped as "Weekdays" and "Weekend", each with an opening time listed under it.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Hours</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section for="Menu">
+            <table border="1">
+                <thead>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Vegetarian</th>
+                    <th>Yes/No</th>
+                </thead>
+            </table>
+        </section>
+
+        <section for="Contact">
+            <form >
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+               
+                <select name="text" id="reason for contacting">
+                    <label for="reason for contacting"></label>
+
+                    <button type="submit"></button>
+                </select>
+            </form>
+        </section>
+
+        <section for="Hours">
+            <img src="images/0a6983a5-895e-4e68-9edb-88adf79211e9___RS_Early.B 9072.JPG" alt="A leaf img">
+
+            <p>It's a leaf picture. the leaf in this img has no special meanig.</p>
+
+            <ul>
+                <li>
+                    <ol>Weekdays
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+
+                    Time:10:00 AM to 7:00 PM</ol>
+                </li>
+
+                <li>
+                    <ol>Weekend
+                        <li>Sta</li>
+                        <li>Sun</li>
+                    Time:10:00 AM to 2:00 PM</ol>
+                </li>
+
+            </ul>
+
+        </section>
+    </main>
+    
+</body>
+</html>
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Cafe</title>
+</head>
+<body>
+    <header>
+        <h1>Green Leaf Cafe</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#hours">Hours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Vegetarian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Masala Chai</td>
+                        <td>$2</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Sandwich</td>
+                        <td>$5</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Veg Burger</td>
+                        <td>$4</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Filter Coffee</td>
+                        <td>$2</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="hours">
+            <h2>Hours</h2>
+            <figure>
+                <img src="images/cafe.jpg" alt="Front of the cafe with outdoor tables">
+                <figcaption>Our cafe, open every day.</figcaption>
+            </figure>
+
+            <ul>
+                <li>Weekdays
+                    <ul>
+                        <li>Mon to Fri</li>
+                        <li>10:00 AM to 7:00 PM</li>
+                    </ul>
+                </li>
+                <li>Weekend
+                    <ul>
+                        <li>Sat and Sun</li>
+                        <li>10:00 AM to 2:00 PM</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="reason">Reason for contacting</label>
+                <select id="reason" name="reason">
+                    <option value="feedback">Feedback</option>
+                    <option value="booking">Table booking</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                <br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2026 Green Leaf Cafe</small>
+    </footer>
+</body>
+</html>
+
+-->

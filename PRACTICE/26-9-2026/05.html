@@ -1,52 +1,47 @@
 <!--
 
-5. Your own five-page mini-site — pick a topic you're interested in and build 5 linked pages (index.html + 4 others) with a shared <nav> on every page. This is a self-directed exercise: you decide the topic and content, I'll just check the HTML structure.
+5. Full "portfolio" homepage — your biggest integration yet: <header> with <nav>, a <main> with a <section> for "About," a <section> for "Projects" (using a <figure> for each project with an image and caption), and a <footer> with social links. This introduces <section> — look up how it differs from <article>.
 
 -->
+    
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Blog</title>
-    </head>
-    <body>
-        <header>
-            <h1>My Blog</h1>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Bhuvan's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-            </nav>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm learning web development and building small projects to practice.</p>
+        </section>
 
-        </header>
+        <section id="projects">
+            <h2>Projects</h2>
 
-        <main>
-            <article>
-                <h2>Learning web developmenrt</h2>
-                <p>Here is what I've covered</p>
+            <figure>
+                <img src="images/project1.jpg" alt="Screenshot of my profile card page">
+                <figcaption>Profile card: my first HTML page.</figcaption>
+            </figure>
 
-                <ul>
-                    <li>Structure
-                        <ul>
-                            <li>Heading</li>
-                            <li>Lists</li>
-                        </ul>
-                    </li>
-                    <li>Media
-                        <ul>
-                            <li>Images</li>
-                            <li>Video</li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
+            <figure>
+                <img src="images/project2.jpg" alt="Screenshot of my fan site">
+                <figcaption>Fan site: a five-page linked site.</figcaption>
+            </figure>
+        </section>
+    </main>
 
-            <aside>
-                <p>Side note:always use sematic tags possible.</p>
-            </aside>
-        </main>
-
-        <footer>
-            <p>&copy;2026 My Blog</p>
-        </footer>
-    </body>
+    <footer>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </footer>
+</body>
 </html>

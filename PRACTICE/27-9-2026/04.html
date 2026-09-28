@@ -1,18 +1,39 @@
 <!--
 
-4. Everything-in-one glossary page — a glossary (<dl>) where each definition also includes a <blockquote> example sentence and a <mark>-highlighted key word.
--->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Image</title>
-    </head>
-    <body>
-        <h1>Photo</h1>
-        <figure>
-            <img src="mages/0a6983a5-895e-4e68-9edb-88adf79211e9___RS_Early.B 9072.JPG" alt="A green leaf">
+4. Datalist, file upload, and color
 
-            <figcaption>A leaf photographed up close</figcaption>
-        </figure>
-    </body>
+Question: Build a profile-setup form with a city field that suggests options as you type but still allows other values, a file upload for a profile photo, and a favorite-color picker.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Setup</title>
+</head>
+<body>
+    <h1>Profile Setup</h1>
+    <form>
+        <label for="city">City</label>
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+            <option value="Bengaluru">
+            <option value="Mumbai">
+            <option value="Delhi">
+            <option value="Chennai">
+        </datalist>
+        <br><br>
+
+        <label for="photo">Profile photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <br><br>
+
+        <label for="color">Favorite color</label>
+        <input type="color" id="color" name="color" value="#3366ff">
+        <br><br>
+
+        <button type="submit">Save Profile</button>
+    </form>
+</body>
 </html>

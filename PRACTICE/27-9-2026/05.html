@@ -1,52 +1,23 @@
 <!--
 
-5. Your own five-page mini-site — pick a topic you're interested in and build 5 linked pages (index.html + 4 others) with a shared <nav> on every page. This is a self-directed exercise: you decide the topic and content, I'll just check the HTML structure.
+5. Responsive image
+
+Question: Show an image that switches to a different file on small screens, using the right tags so it still has alt text and doesn't jump around while loading.
 
 -->
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Blog</title>
-    </head>
-    <body>
-        <header>
-            <h1>My Blog</h1>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-            </nav>
-
-        </header>
-
-        <main>
-            <article>
-                <h2>Learning web developmenrt</h2>
-                <p>Here is what I've covered</p>
-
-                <ul>
-                    <li>Structure
-                        <ul>
-                            <li>Heading</li>
-                            <li>Lists</li>
-                        </ul>
-                    </li>
-                    <li>Media
-                        <ul>
-                            <li>Images</li>
-                            <li>Video</li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-
-            <aside>
-                <p>Side note:always use sematic tags possible.</p>
-            </aside>
-        </main>
-
-        <footer>
-            <p>&copy;2026 My Blog</p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+</head>
+<body>
+    <h1>Responsive Image</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="images/photo-small.jpg">
+        <img src="images/photo-large.jpg" alt="A mountain landscape at sunrise" width="800" height="500" loading="lazy">
+    </picture>
+</body>
 </html>
