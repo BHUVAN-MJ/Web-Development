@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Cafe</title>
+</head>
+<body>
+    <header>
+        <h1>Green Leaf Cafe</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#hours">Hours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Vegetarian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Masala Chai</td>
+                        <td>$2</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Sandwich</td>
+                        <td>$5</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Veg Burger</td>
+                        <td>$4</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Filter Coffee</td>
+                        <td>$2</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="hours">
+            <h2>Hours</h2>
+            <figure>
+                <img src="images/cafe.jpg" alt="Front of the cafe with outdoor tables">
+                <figcaption>Our cafe, open every day.</figcaption>
+            </figure>
+
+            <ul>
+                <li>Weekdays
+                    <ul>
+                        <li>Mon to Fri</li>
+                        <li>10:00 AM to 7:00 PM</li>
+                    </ul>
+                </li>
+                <li>Weekend
+                    <ul>
+                        <li>Sat and Sun</li>
+                        <li>10:00 AM to 2:00 PM</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="reason">Reason for contacting</label>
+                <select id="reason" name="reason">
+                    <option value="feedback">Feedback</option>
+                    <option value="booking">Table booking</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                <br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2026 Green Leaf Cafe</small>
+    </footer>
+</body>
+</html>
